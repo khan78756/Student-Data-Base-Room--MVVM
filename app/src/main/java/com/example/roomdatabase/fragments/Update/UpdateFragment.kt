@@ -1,4 +1,4 @@
-package com.example.roomdatabase.fragment.UpdateFragment
+package com.example.roomdatabase.fragments.Update
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -29,12 +29,14 @@ class UpdateFragment : Fragment() {
         // Inflate the layout for this fragment
         val view= inflater.inflate(R.layout.fragment_update, container, false)
 
-        mUserViewModel= ViewModelProvider(this).get(UserViewModel::class.java)
 
+        // GET SPECIFIC DATA TO BE UPDATE
+        mUserViewModel= ViewModelProvider(this).get(UserViewModel::class.java)
         view.etUpdatefirstname.setText(args.currentUser.firstName)
         view.etUpdatelastname.setText(args.currentUser.secondName)
         view.etUpdateage.setText(args.currentUser.age)
 
+        //ADDING CLICKLISNER TO UPDATE BUTTON
         view.btUpdateadd.setOnClickListener {
             updateItem()
         }
@@ -42,10 +44,11 @@ class UpdateFragment : Fragment() {
 
         //ADD MENU
         setHasOptionsMenu(true)
-
         return view
     }
 
+
+    //FOR UPDATING PARTICULAR DATA
     private fun updateItem() {
         val firstName=etUpdatefirstname.text.toString()
         val lastName=etUpdatelastname.text.toString()
@@ -68,10 +71,14 @@ class UpdateFragment : Fragment() {
         }
     }
 
+
+    //CHECK WHETHER THE FIELDS ARE EMPTY OR NOT
     private fun check(firstName:String, secondName:String, age: String):Boolean{
         return !(TextUtils.isEmpty(firstName) && TextUtils.isEmpty(secondName) && TextUtils.isEmpty(age) )
     }
 
+
+    //FOR MENU OPTION
     @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.delete_item,menu)
@@ -85,6 +92,8 @@ class UpdateFragment : Fragment() {
         return super.onOptionsItemSelected(item)
     }
 
+
+    //FOR DELETING A SINGLE USER
     private fun deleteUser() {
         val builder=AlertDialog.Builder(requireContext())
         builder.setPositiveButton("Yes"){_,_ ->

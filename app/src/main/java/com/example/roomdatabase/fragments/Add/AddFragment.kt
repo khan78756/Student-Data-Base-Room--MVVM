@@ -1,4 +1,4 @@
-package com.example.roomdatabase.fragment.addfragment
+package com.example.roomdatabase.fragments.Add
 
 import android.os.Bundle
 import android.text.Editable

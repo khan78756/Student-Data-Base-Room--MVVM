@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listfragment"
-        android:name="com.example.roomdatabase.fragment.listfragment.ListFragment"
+        android:name="com.example.roomdatabase.fragments.List.ListFragment"
         android:label="List"
         tools:layout="@layout/fragment_listfragment" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/addfragment"
-        android:name="com.example.roomdatabase.fragment.addfragment.AddFragment"
+        android:name="com.example.roomdatabase.fragments.Add.AddFragment"
         android:label="Add"
         tools:layout="@layout/fragment_addfragment" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateFragment"
-        android:name="com.example.roomdatabase.fragment.UpdateFragment.UpdateFragment"
+        android:name="com.example.roomdatabase.fragments.Update.UpdateFragment"
         android:label="fragment_update"
         tools:layout="@layout/fragment_update" >
         <action

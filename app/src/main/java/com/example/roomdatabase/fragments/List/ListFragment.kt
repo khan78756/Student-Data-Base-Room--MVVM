@@ -1,4 +1,4 @@
-package com.example.roomdatabase.fragment.listfragment
+package com.example.roomdatabase.fragments.List
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -26,7 +26,7 @@ class ListFragment : Fragment() {
         val view= inflater.inflate(R.layout.fragment_listfragment, container, false)
 
 
-        //Setting yp recyclerView
+        //SETTING UP RECYCLERVIEW
         val adapter= ListAdapter()
         val recyclarView= view.rvShow
         recyclarView.adapter=adapter
@@ -40,20 +40,20 @@ class ListFragment : Fragment() {
         })
 
 
-
-
-
-
+        //ADDING CLICKLISNER TO FLOATING BUTTON
         view.fbMove.setOnClickListener {
             findNavController().navigate(R.id.action_listfragment_to_addfragment)
+
         }
+
 
         //ADD MENU
         setHasOptionsMenu(true)
-
         return view
     }
 
+
+    //FOR MENU OPTIONS
     @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.delete_item,menu)
@@ -67,6 +67,8 @@ class ListFragment : Fragment() {
         return super.onOptionsItemSelected(item)
     }
 
+
+    //FUNCTION THAT DELETE ALL USERS
     private fun deleteAllUser() {
         val builder= AlertDialog.Builder(requireContext())
         builder.setPositiveButton("Yes"){_,_ ->

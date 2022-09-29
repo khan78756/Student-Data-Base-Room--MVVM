@@ -1,11 +1,10 @@
-package com.example.roomdatabase.fragment.listfragment
+package com.example.roomdatabase.fragments.List
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.recyclerview.widget.RecyclerView
 import com.example.roomdatabase.R
 import com.example.roomdatabase.model.User
