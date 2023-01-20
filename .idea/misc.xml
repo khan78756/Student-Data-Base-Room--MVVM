@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidstudioProjects/Roomdatabase/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidstudioProjects/Roomdatabase/app/src/main/res/drawable/custombackground.xml" value="0.126" />
+        <entry key="..\:/AndroidstudioProjects/Roomdatabase/app/src/main/res/drawable/custombutton.xml" value="0.126" />
+        <entry key="..\:/AndroidstudioProjects/Roomdatabase/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/AndroidstudioProjects/Roomdatabase/app/src/main/res/layout/card.xml" value="0.22826086956521738" />
         <entry key="..\:/AndroidstudioProjects/Roomdatabase/app/src/main/res/layout/fragment_addfragment.xml" value="0.22826086956521738" />
-        <entry key="..\:/AndroidstudioProjects/Roomdatabase/app/src/main/res/layout/fragment_listfragment.xml" value="0.22826086956521738" />
-        <entry key="..\:/AndroidstudioProjects/Roomdatabase/app/src/main/res/layout/fragment_update.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidstudioProjects/Roomdatabase/app/src/main/res/layout/fragment_listfragment.xml" value="0.2" />
+        <entry key="..\:/AndroidstudioProjects/Roomdatabase/app/src/main/res/layout/fragment_update.xml" value="0.2" />
         <entry key="..\:/AndroidstudioProjects/Roomdatabase/app/src/main/res/menu/delete_item.xml" value="0.253125" />
       </map>
     </option>

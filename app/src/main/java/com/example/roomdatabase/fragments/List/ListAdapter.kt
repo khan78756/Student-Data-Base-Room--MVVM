@@ -10,22 +10,16 @@ import com.example.roomdatabase.R
 import com.example.roomdatabase.model.User
 import kotlinx.android.synthetic.main.card.view.*
 
+
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
+
+
+
+
+
 
     private  var userList= emptyList<User>()
 
-    //FOR BUTTON CLICK PURPOSE
-    private lateinit var mListner: onItemClickListner
-
-    interface onItemClickListner {
-        fun onButtonClick(position: Int)
-
-    }
-
-
-    fun setOnItemClickListner(listner: onItemClickListner) {
-        mListner = listner
-    }
 
 
 
